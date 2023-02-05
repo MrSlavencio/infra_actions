@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    """Main   func."""
+    """Main  func."""
     
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'infra_project.settings')
     try:
