@@ -75,7 +75,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }} 
           script: |
-            # Выполняет pull образа с DockerHub
+            # Выполняет pull образа с DockerHub k
             sudo docker pull ${{ secrets.USER }}/test:latest
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
