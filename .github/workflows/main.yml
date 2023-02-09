@@ -77,7 +77,7 @@ jobs:
           script: |
             # Выполняет pull образа с DockerHub
             sudo docker pull ${{ secrets.USER }}/test:latest
-            #остановка всех контейнеров д
+            #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 ${{ secrets.USER }}/test:latest
 
